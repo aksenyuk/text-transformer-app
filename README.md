@@ -9,3 +9,4 @@
   - [Product Backlog](https://docs.google.com/spreadsheets/d/1oonk28AkVlMfayjzMqnAe6wwWlUSPeqs/edit?usp=sharing&ouid=111704508616076698676&rtpof=true&sd=true)
   - **For people working with text data, our _Text Transformer_ application will allow you to transform text data (e.g. change case, eliminate duplicates, etc.).**
   - **The application will be available via GUI as well as remote API, thanks to which it will be possible to integrate it with existing tools.**
+loolo
