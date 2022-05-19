@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class ToAcronym extends Decorator{
 
-    public ToAcronym(InterfaceTransformer transformer){
+    public ToAcronym(TransformerInterface transformer){
         super(transformer);
     }
 

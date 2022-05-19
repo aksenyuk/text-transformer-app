@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class ToFull extends Decorator{
 
-    public ToFull(InterfaceTransformer transformer){
+    public ToFull(TransformerInterface transformer){
         super(transformer);
     }
 

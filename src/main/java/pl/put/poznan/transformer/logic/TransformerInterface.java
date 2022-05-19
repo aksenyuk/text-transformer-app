@@ -1,5 +1,5 @@
 package pl.put.poznan.transformer.logic;
 
-public interface InterfaceTransformer {
+public interface TransformerInterface {
     public String transform(String text);
 }
