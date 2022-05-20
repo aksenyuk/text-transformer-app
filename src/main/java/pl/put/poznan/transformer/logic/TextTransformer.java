@@ -17,7 +17,7 @@ public class TextTransformer {
                 this.transforms = new ToLower(transforms);
                 break;
             case "capitalize":
-                this.transforms = new ToCapitalize(transforms);
+                this.transforms = new Capitalize(transforms);
                 break;
             case "inverse":
                 this.transforms = new ToInverse(transforms);
