@@ -11,8 +11,8 @@ public class ToLatex extends Decorator{
     }
 
     private String ToLatexFormat(String text){
-        text.replace("$", "\\$");
-        text.replace("&", "\\&");
+        text = text.replace("$", "\\$");
+        text = text.replace("&", "\\&");
         return text;
     }
 }
