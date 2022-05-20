@@ -11,9 +11,9 @@ public class ToCapitalize extends Decorator{
     }
 
     private String capitalize(String text){
-        list_text = text.split(" ");
+        String[] list_text = text.split(" ");
 
-        for (int i = 0; i < len(list_text); i++){
+        for (int i = 0; i < list_text.length; i++){
             list_text[i] = list_text[i].substring(0, 1).toUpperCase() + list_text[i].substring(1);
         }
         
