@@ -30,16 +30,16 @@ public class TextTransformer {
 //                case "numbersToText":
 //                    this.transformer = new NumbersToText(transformer);
 //                    break;
-                case "stringsToAcronyms":
+                case "to-acronyms":
                     this.transformer = new ToAcronym(transformer);
                     break;
-                case "acronymsToStrings":
+                case "to-full-form":
                     this.transformer = new ToFull(transformer);
                     break;
                 case "latex":
                     this.transformer = new ToLatex(transformer);
                     break;
-                case "removeRepetitions":
+                case "remove-repetitions":
                     this.transformer = new EliminateRepetitions(transformer);
                     break;
                 default:
