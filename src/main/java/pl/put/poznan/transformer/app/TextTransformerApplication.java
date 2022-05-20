@@ -12,13 +12,22 @@ public class TextTransformerApplication {
     public static void main(String[] args) {
         SpringApplication.run(TextTransformerApplication.class, args);
 
-        System.out.println("Intro");
+        System.out.println("You can transform your text with various options.");
 
         System.out.println("Input the text:");
         Scanner sc= new Scanner(System.in);
         String text = sc.nextLine();
 
-        System.out.println("Options");
+        System.out.println("Available options:\n" +
+                "upper - to make the text UPPER-CASE\n" +
+                "lower - to make the text lower-case\n" +
+                "capitalize - to make all word Capital\n" +
+                "inverse - to inverse the order (preserves case)\n" +
+                "to-acronyms - change full form to acronyms\n" +
+                "to-full-form - change acronyms to full form\n" +
+                "latex - to make the text LaTeX suitable\n" +
+                "remove-repetitions - to remove consecutive repetitive words");
+        System.out.println("Please type your options (separated by semicolon if more thar one):");
 
         String[] todo = sc.nextLine().split(";");
         try {
