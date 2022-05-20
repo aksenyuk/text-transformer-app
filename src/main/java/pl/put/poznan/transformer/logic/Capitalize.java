@@ -1,8 +1,8 @@
 package pl.put.poznan.transformer.logic;
 
-public class ToCapitalize extends Decorator{
+public class Capitalize extends Decorator{
     
-    public ToCapitalize(TransformerInterface transformer){
+    public Capitalize(TransformerInterface transformer){
         super(transformer);
     }
     
