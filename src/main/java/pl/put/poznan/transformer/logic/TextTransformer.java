@@ -44,6 +44,7 @@ public class TextTransformer {
                     break;
                 default:
                     //throw new exception
+                    System.out.println("BAD OPTION:" + operation);
             }
         }
     }
