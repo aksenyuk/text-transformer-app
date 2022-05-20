@@ -28,7 +28,7 @@ public class ToInverse extends Decorator{
         for (Integer idx : IndexSet){
             text3[idx] = Character.toUpperCase(text3[idx]);
         }
-        return text3.toString();
+        return new String(text3);
     }
 
 }
