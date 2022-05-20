@@ -1,5 +1,7 @@
 package pl.put.poznan.transformer.logic;
 
+import java.util.regex.Pattern;
+
 public class ToLatex extends Decorator{
 
     public ToLatex(TransformerInterface transformer){
@@ -11,8 +13,8 @@ public class ToLatex extends Decorator{
     }
 
     private String ToLatexFormat(String text){
-        text = text.replace("$", "\\$");
-        text = text.replace("&", "\\&");
+        text = text.replaceAll(Pattern.quote("$"), "\\$");
+        text = text.replaceAll(Pattern.quote("&"), "\\&");
         return text;
     }
 }
