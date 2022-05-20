@@ -2,15 +2,36 @@ package pl.put.poznan.transformer.logic;
 
 import java.util.Objects;
 
+/**
+ * The given class is created to convert numbers into text in English
+ */
+
 public class NumbersToText extends Decorator{
+
+    /**
+     * Decorator transformer constructor
+     * @param transformer - Decorator interface component of TransformerInterface type
+     */
 
     public NumbersToText(TransformerInterface transformer){
         super(transformer);
     }
 
+    /**
+     * The method to activate this class text modifications
+     * @param text - an input text to be processed of String type
+     * @return modified text
+     */
+
     public String transform(String text){
         return int_to_text(transformer.transform(text));
     }
+
+    /**
+     * The method to check if a word given as a parameter is an integer
+     * @param word - a word from the input text to be processed of String type
+     * @return true if the word is integer, otherwise false
+     */
 
     public static boolean isNumeric(String word) {
         try {
@@ -20,6 +41,12 @@ public class NumbersToText extends Decorator{
         }
         return true;
     }
+
+    /**
+     * The method to check if a word given as a parameter is of Double type
+     * @param word - a word from the input text to be processed of String type
+     * @return true if the word is double, otherwise false
+     */
 
     public static boolean isDouble(String word) {
         try {
@@ -35,6 +62,12 @@ public class NumbersToText extends Decorator{
     public static String[] nums = {"", " one", " two", " three", " four", " five", " six", " seven", " eight", " nine", " ten",
             " eleven", " twelve", " thirteen", " fourteen", " fifteen", " sixteen", " seventeen", " eighteen", " nineteen"};
 
+    /**
+     * The method to convert a number which is below hundred to a word
+     * @param number - a number from the input text to be processed of int type
+     * @return word representation of the given number
+     */
+
     public static String belowHundred(int number){
         String result = null;
         if (number < 20){
@@ -49,6 +82,12 @@ public class NumbersToText extends Decorator{
         return result;
     }
 
+    /**
+     * The method to convert a number which is above hundred to a word
+     * @param number - a number from the input text to be processed of int type
+     * @return word representation of the given number
+     */
+
     public static String aboveHundred(int number, String code) {
         String output = null;
         if(Objects.equals(code, "int")){
@@ -59,6 +98,12 @@ public class NumbersToText extends Decorator{
         }
         return output;
     }
+
+    /**
+     * The general method to replace numbers with their word representation in the parsed input text
+     * @param text - an input text to be processed of String type
+     * @return modified text
+     */
 
     private String int_to_text(String text){
         String[] list_text = text.split(" ");
