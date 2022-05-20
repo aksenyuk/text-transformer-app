@@ -43,7 +43,6 @@ public class TextTransformer {
                     this.transformer = new EliminateRepetitions(transformer);
                     break;
                 default:
-                    //throw new exception
                     System.out.println("BAD OPTION:" + operation);
             }
         }
