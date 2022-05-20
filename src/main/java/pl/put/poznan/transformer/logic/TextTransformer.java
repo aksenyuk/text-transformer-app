@@ -5,45 +5,47 @@ package pl.put.poznan.transformer.logic;
  */
 public class TextTransformer {
 
-    private final String[] transforms;
+    private TransformerInterface transformer;
 
-    public TextTransformer(String[] transforms){
-        // this.transforms = transforms;
-        switch (transforms) {
-            case "upper":
-                this.transforms = new ToUpper(transforms);
-                break;
-            case "lower":
-                this.transforms = new ToLower(transforms);
-                break;
-            case "capitalize":
-                this.transforms = new Capitalize(transforms);
-                break;
-            case "inverse":
-                this.transforms = new ToInverse(transforms);
-                break;
-            case "numbersToText":
-                this.transforms = new NumbersToText(transforms);
-                break;
-            case "stringsToAcronyms":
-                this.transforms = new ToAcronym(transforms);
-                break;
-            case "acronymsToStrings":
-                this.transforms = new ToFull(transforms);
-                break;
-            case "latex":
-                this.transforms = new ToLatex(transforms);
-                break;
-            case "removeRepetitions":
-                this.transforms = new removeRepetitions(transforms);
-                break;
-            default:
-                //throw new exception
+    public String transform(String text){
+        return transformer.transform(text);
+    }
+
+    public TextTransformer(String[] todo){
+        transformer = new DoNothing();
+        for(String operation : todo){
+            switch (operation) {
+                case "upper":
+                    this.transformer = new ToUpper(transformer);
+                    break;
+                case "lower":
+                    this.transformer = new ToLower(transformer);
+                    break;
+                case "capitalize":
+                    this.transformer = new Capitalize(transformer);
+                    break;
+                case "inverse":
+                    this.transformer = new ToInverse(transformer);
+                    break;
+//                case "numbersToText":
+//                    this.transformer = new NumbersToText(transformer);
+//                    break;
+                case "stringsToAcronyms":
+                    this.transformer = new ToAcronym(transformer);
+                    break;
+                case "acronymsToStrings":
+                    this.transformer = new ToFull(transformer);
+                    break;
+                case "latex":
+                    this.transformer = new ToLatex(transformer);
+                    break;
+                case "removeRepetitions":
+                    this.transformer = new EliminateRepetitions(transformer);
+                    break;
+                default:
+                    //throw new exception
+            }
         }
     }
 
-    public String transform(String text){
-        // of course, normally it would do something based on the transforms
-        // return text.toUpperCase();
-    }
 }
