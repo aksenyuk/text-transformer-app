@@ -25,15 +25,11 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
       
-    - run: mkdir staging && cp target/*.jar staging
-    - uses: actions/upload-artifact@v3
-      with:
-        name: Package
-        path: staging
-    - uses: AButler/upload-release-assets@v2.0
-      with:
-        files: 'target/*.jar'
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Get JARs
+      run: |
+        mkdir jars
+        cd target
+        cp *.jar /../jars
       
 #     - name: Get JAR and JavaDoc
 #       run: |
