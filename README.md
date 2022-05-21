@@ -11,3 +11,4 @@
   - [UML Diagram](https://drive.google.com/file/d/1q688zw4YsSo5d6bQ-c_FD0PeGcUZWRWZ/view)
   - **For people working with text data, our _Text Transformer_ application will allow you to transform text data (e.g. change case, eliminate duplicates, etc.).**
   - **The application will be available via GUI as well as remote API, thanks to which it will be possible to integrate it with existing tools.**
+  - The relevanr JAR file and JavaDoc are available after each build in Artifacts tab.
