@@ -23,4 +23,12 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean package
+      run: |
+        mvn -B package --file pom.xml
+        mkdir staging && cp target/*.jar staging
+      
+    - name: Get JAR Artifacts 
+      uses: actions/upload-artifacr@v2
+      with:
+        name: jar-artifacts
+        path: staging
