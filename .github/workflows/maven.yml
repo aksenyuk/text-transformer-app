@@ -36,7 +36,7 @@ jobs:
     - name: Generate JavaDoc
       run: |
         mvn javadoc:javadoc
-        mkdir docs && cp target/site/apidocs/* docs
+        mkdir docs && cp -r target/site/apidocs/* docs
 
     - name: Get JavaDoc Artifacts 
       uses: actions/upload-artifact@v3
