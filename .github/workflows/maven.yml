@@ -32,3 +32,6 @@ jobs:
       with:
         name: jar-artifacts
         path: staging
+        
+    - name: Generate JavaDoc
+      run: mvn javadoc:javadoc
