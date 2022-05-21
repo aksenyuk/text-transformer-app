@@ -1,5 +1,5 @@
 # Text Transformer SE Project
-![Build status](<https://travis-ci.com/allsuitablenamesarealreadytaken/SE-2022-Project.svg?branch=master>)
+![Build status](https://github.com/<user>/<repo>/actions/workflows/maven.yml/badge.svg)
 ## WIiT, AI, 4th Semester, 2022
 ### Team members: 
  - **Oleksandr Yasinskyi, 150570 - _Product Owner Proxy_**
