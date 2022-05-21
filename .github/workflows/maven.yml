@@ -1,7 +1,7 @@
 # This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Java CI with Maven
+name: "Build: "
 
 on:
   push:
@@ -34,4 +34,12 @@ jobs:
         path: staging
         
     - name: Generate JavaDoc
-      run: mvn javadoc:javadoc
+      run: |
+        mvn javadoc:javadoc
+        mkdir docs && cp target/site/apidocs/* docs
+
+    - name: Get JavaDoc Artifacts 
+      uses: actions/upload-artifact@v3
+      with:
+        name: doc-artifacts
+        path: docs
