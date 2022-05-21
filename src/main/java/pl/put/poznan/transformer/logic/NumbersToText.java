@@ -24,7 +24,7 @@ public class NumbersToText extends Decorator{
      */
 
     public String transform(String text){
-        return int_to_text(transformer.transform(text));
+        return int_to_text(super.transform(text));
     }
 
     /**

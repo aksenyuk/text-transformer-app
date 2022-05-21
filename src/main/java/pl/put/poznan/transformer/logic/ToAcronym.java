@@ -11,7 +11,7 @@ public class ToAcronym extends Decorator{
     }
 
     public String transform(String text){
-        return toShortForm(transformer.transform(text));
+        return toShortForm(super.transform(text));
     }
 
     private String toShortForm(String text){

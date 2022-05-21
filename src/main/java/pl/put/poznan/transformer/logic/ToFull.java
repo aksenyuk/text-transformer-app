@@ -10,7 +10,7 @@ public class ToFull extends Decorator{
     }
 
     public String transform(String text){
-        return toFullForm(transformer.transform(text));
+        return toFullForm(super.transform(text));
     }
 
     private String toFullForm(String text){

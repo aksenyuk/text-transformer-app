@@ -22,7 +22,7 @@ public class EliminateRepetitions extends Decorator{
      */
 
     public String transform(String text){
-        return eliminateRepetitions(transformer.transform(text));
+        return eliminateRepetitions(super.transform(text));
     }
 
     /**

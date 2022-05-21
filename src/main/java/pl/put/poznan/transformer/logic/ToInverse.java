@@ -24,7 +24,7 @@ public class ToInverse extends Decorator{
      */
 
     public String transform(String text){
-        return InverseFunction(transformer.transform(text));
+        return InverseFunction(super.transform(text));
     }
 
     /**

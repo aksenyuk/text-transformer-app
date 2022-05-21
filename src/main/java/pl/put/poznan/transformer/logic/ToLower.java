@@ -7,7 +7,7 @@ public class ToLower extends Decorator{
     }
     
     public String transform(String text){
-        return lowerCase(transformer.transform(text));
+        return lowerCase(super.transform(text));
     }
 
     private String lowerCase(String text){

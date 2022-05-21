@@ -7,7 +7,7 @@ public class ToUpper extends Decorator{
     }
     
     public String transform(String text){
-        return upperCase(transformer.transform(text));
+        return upperCase(super.transform(text));
     }
 
     private String upperCase(String text){

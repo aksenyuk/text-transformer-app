@@ -1,7 +1,7 @@
 package pl.put.poznan.transformer.logic;
 
-public class Decorator implements TransformerInterface {
-    protected TransformerInterface transformer;
+public abstract class Decorator implements TransformerInterface {
+    private TransformerInterface transformer;
 
     public Decorator(TransformerInterface transformer){
         this.transformer = transformer;
@@ -9,6 +9,6 @@ public class Decorator implements TransformerInterface {
 
     @Override
     public String transform(String text){
-        return text;
+        return this.transformer.transform(text);
     }
 }

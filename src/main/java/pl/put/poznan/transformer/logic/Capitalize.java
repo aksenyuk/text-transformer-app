@@ -7,7 +7,7 @@ public class Capitalize extends Decorator{
     }
     
     public String transform(String text){
-        return capitalize(transformer.transform(text));
+        return capitalize(super.transform(text));
     }
 
     private String capitalize(String text){

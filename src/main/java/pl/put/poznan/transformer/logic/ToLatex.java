@@ -9,7 +9,7 @@ public class ToLatex extends Decorator{
     }
 
     public String transform(String text){
-        return ToLatexFormat(transformer.transform(text));
+        return ToLatexFormat(super.transform(text));
     }
 
     private String ToLatexFormat(String text){
