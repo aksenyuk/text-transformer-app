@@ -27,9 +27,7 @@ jobs:
       
     - name: Get JARs
       run: |
-        mkdir jars
-        cd target
-        cp *.jar /../jars
+        cp target/*.jar jars
       
 #     - name: Get JAR and JavaDoc
 #       run: |
