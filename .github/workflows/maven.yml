@@ -28,7 +28,7 @@ jobs:
         mkdir staging && cp target/*.jar staging
       
     - name: Get JAR Artifacts 
-      uses: actions/upload-artifacr@v2
+      uses: actions/upload-artifact@v3
       with:
         name: jar-artifacts
         path: staging
