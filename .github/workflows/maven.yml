@@ -25,5 +25,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
       
-    - name: Get JAR
-      run: mvn package
+    - name: Get JAR and JavaDoc
+      run: |
+        mvn package
+        mvn site
