@@ -41,7 +41,7 @@ public class ControlPanel extends JFrame {
         super(title);
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setContentPane(panel1);
+
         this.pack();
 
         setBounds(300, 0, 1000, 800);
@@ -274,6 +274,8 @@ public class ControlPanel extends JFrame {
         });
 
         textArea1.setCaretColor(Color.white);
+
+        this.setContentPane(panel1);
 
     }
 
