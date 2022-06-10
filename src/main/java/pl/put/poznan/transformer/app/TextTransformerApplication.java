@@ -9,7 +9,10 @@ import java.util.Scanner;
 @SpringBootApplication(scanBasePackages = {"pl.put.poznan.transformer.rest"})
 public class TextTransformerApplication {
 
-        // for Rest GET request use e.g. localhost/8080/" your text "?operations=op1;op2
+        /*
+         for Rest GET request use e.g. localhost/8080/your text?operations=op1;op2
+         then select 'Raw Data' tab and receive your transformed text
+         */
         public static void main(String[] args) {
                 ControlPanel panel = new ControlPanel("Text Transformer");
                 panel.setVisible(true);

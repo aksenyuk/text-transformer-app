@@ -18,10 +18,9 @@ public class TextTransformerController {
                               @RequestParam(value="operations", defaultValue="upper") String operations) {
 
         // log the parameters
-//        logger.debug(text);
-//        logger.debug(operations);
+        logger.debug(text);
+        logger.debug(operations);
 
-        // perform the transformation, you should run your logic here, below is just a silly example
         String[] todo = operations.split(";");
         try {
             TextTransformer transformer = new TextTransformer(todo);
@@ -31,6 +30,10 @@ public class TextTransformerController {
             System.out.println("ERROR!");
         }
 
+//        if (text.length() > 4){
+//            text = text.substring(2, text.length() - 2);
+//        }
+//        logger.debug(text);
         return text;
     }
 
