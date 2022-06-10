@@ -93,8 +93,8 @@ public class NumbersToText extends Decorator{
         if(Objects.equals(code, "int")){
             output = nums[number / 100] + " hundred" + belowHundred(number - 100 * (number / 100));
         }
-        else{
-            output = nums[number / 100] + belowHundred(number - 100 * (number / 100));
+        if(Objects.equals(code, "float")){
+            output = nums[number / 100] + " hundred" + belowHundred(number - 100 * (number / 100));
         }
         return output;
     }
@@ -125,6 +125,7 @@ public class NumbersToText extends Decorator{
                     String[] new_number = list_text[i].split("\\.");
                     int before_dot = Integer.parseInt(new_number[0]);
                     int after_dot = Integer.parseInt(new_number[1]);
+                    System.out.println(before_dot);
 
                     if (before_dot < 100){
                         result = belowHundred(before_dot);
@@ -133,11 +134,11 @@ public class NumbersToText extends Decorator{
                         result = aboveHundred(before_dot, "float");
                     }
 
-                    if (after_dot % 10 < 10){
-                        result += belowHundred(after_dot) + "tenth";
+                    if (after_dot / 10 < 1){
+                        result += " and" + belowHundred(after_dot) + " tenth";
                     }
                     else{
-                        result += aboveHundred(after_dot, "float") + "hundredth";
+                        result += " and" + aboveHundred(after_dot, "float") + " hundredth";
                     }
                     list_text[i] = result;
                 }

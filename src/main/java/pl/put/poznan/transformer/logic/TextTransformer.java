@@ -27,7 +27,7 @@ public class TextTransformer {
                 case "inverse":
                     this.transformer = new ToInverse(transformer);
                     break;
-                case "numbersToText":
+                case "numbers-to-text":
                     this.transformer = new NumbersToText(transformer);
                     break;
                 case "to-acronyms":
