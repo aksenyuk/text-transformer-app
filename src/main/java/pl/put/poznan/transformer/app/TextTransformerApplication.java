@@ -9,11 +9,14 @@ import java.util.Scanner;
 @SpringBootApplication(scanBasePackages = {"pl.put.poznan.transformer.rest"})
 public class TextTransformerApplication {
 
+        // for Rest GET request use e.g. localhost/8080/" your text "?operations=op1;op2
         public static void main(String[] args) {
                 ControlPanel panel = new ControlPanel("Text Transformer");
                 panel.setVisible(true);
                 SpringApplication.run(TextTransformerApplication.class, args);
-
+/*
+        CLI version
+ */
 //                System.out.println("You can transform your text with various options.");
 //
 //                System.out.println("Input the text:");
