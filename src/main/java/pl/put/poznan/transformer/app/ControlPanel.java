@@ -42,7 +42,7 @@ public class ControlPanel extends JFrame {
 
         setBounds(300, 0, 1000, 800);
 
-        ImageIcon frameIcon = new ImageIcon("PP_monogram.png");
+        ImageIcon frameIcon = new ImageIcon("PP_znak.png");
         this.setIconImage(frameIcon.getImage());
 
         textArea1.addKeyListener(new KeyAdapter() {

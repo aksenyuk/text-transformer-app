@@ -20,6 +20,7 @@ public class ToAcronym extends Decorator{
         map.put("for example", "e.g.");
         map.put("among others", "i.a.");
         map.put("and so on", "aso");
+        map.put("professor", "prof.");
 
         for (Map.Entry<String, String> entry : map.entrySet()){
             text = text.replaceAll("(?i)"+ Pattern.quote(entry.getKey()), entry.getValue());

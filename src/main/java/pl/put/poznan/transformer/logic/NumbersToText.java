@@ -57,10 +57,10 @@ public class NumbersToText extends Decorator{
         return true;
     }
 
-    public static String[] tens = {"", " ten", " twenty", " thirty", " forty", " fifty", " sixty", " seventy", " eighty", " ninety"};
+    public static String[] tens = {"", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
 
-    public static String[] nums = {"", " one", " two", " three", " four", " five", " six", " seven", " eight", " nine", " ten",
-            " eleven", " twelve", " thirteen", " fourteen", " fifteen", " sixteen", " seventeen", " eighteen", " nineteen"};
+    public static String[] nums = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+            "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
 
     /**
      * The method to convert a number which is below hundred to a word
@@ -77,7 +77,7 @@ public class NumbersToText extends Decorator{
             result = nums[number % 10];
             number /= 10;
 
-            result = tens[number % 10] + result;
+            result = tens[number % 10] + " " + result;
         }
         return result;
     }
@@ -88,14 +88,10 @@ public class NumbersToText extends Decorator{
      * @return word representation of the given number
      */
 
-    public static String aboveHundred(int number, String code) {
+    public static String aboveHundred(int number) {
         String output = null;
-        if(Objects.equals(code, "int")){
-            output = nums[number / 100] + " hundred" + belowHundred(number - 100 * (number / 100));
-        }
-        if(Objects.equals(code, "float")){
-            output = nums[number / 100] + " hundred" + belowHundred(number - 100 * (number / 100));
-        }
+        output = nums[number / 100] + " hundred " + belowHundred(number - 100 * (number / 100));
+
         return output;
     }
 
@@ -109,36 +105,38 @@ public class NumbersToText extends Decorator{
         String[] list_text = text.split(" ");
         for (int i = 0; i < list_text.length; i++){
             String result;
-            if(isNumeric(list_text[i])){
+            if(isNumeric(list_text[i]) && Integer.parseInt(list_text[i]) < 1000){
                 int number = Integer.parseInt(list_text[i]);
 
                 if (number < 100){
                     result = belowHundred(number);
                 }
                 else{
-                    result = aboveHundred(number, "int");
+                    result = aboveHundred(number);
                 }
                 list_text[i] = result;
             }
             else{
-                if(isDouble(list_text[i])){
+                if(isDouble(list_text[i]) && Integer.parseInt(list_text[i]) < 1000){
                     String[] new_number = list_text[i].split("\\.");
                     int before_dot = Integer.parseInt(new_number[0]);
                     int after_dot = Integer.parseInt(new_number[1]);
-                    System.out.println(before_dot);
 
                     if (before_dot < 100){
                         result = belowHundred(before_dot);
                     }
                     else{
-                        result = aboveHundred(before_dot, "float");
+                        result = aboveHundred(before_dot);
                     }
 
-                    if (after_dot / 10 < 1){
-                        result += " and" + belowHundred(after_dot) + " tenth";
+                    if (after_dot < 10 && after_dot != 0){
+                        result += " and " + belowHundred(after_dot) + " tenth";
+                    }
+                    else if (after_dot == 0){
+                        result = belowHundred(before_dot);
                     }
                     else{
-                        result += " and" + aboveHundred(after_dot, "float") + " hundredth";
+                        result += " and " + belowHundred(after_dot) + " hundredth";
                     }
                     list_text[i] = result;
                 }
