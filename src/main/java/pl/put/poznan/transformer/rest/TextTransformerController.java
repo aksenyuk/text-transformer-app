@@ -15,31 +15,37 @@ public class TextTransformerController {
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public String get(@PathVariable String text,
-                              @RequestParam(value="transforms", defaultValue="upper,escape") String[] transforms) {
+                              @RequestParam(value="operations", defaultValue="upper") String operations) {
 
         // log the parameters
-        logger.debug(text);
-        logger.debug(Arrays.toString(transforms));
+//        logger.debug(text);
+//        logger.debug(operations);
 
         // perform the transformation, you should run your logic here, below is just a silly example
-        TextTransformer transformer = new TextTransformer(transforms);
-        return transformer.transform(text);
+        String[] todo = operations.split(";");
+        try {
+            TextTransformer transformer = new TextTransformer(todo);
+            text = transformer.transform(text);
+        }
+        catch(Exception ex){
+            System.out.println("ERROR!");
+        }
+
+        return text;
     }
 
-    @RequestMapping(method = RequestMethod.POST, produces = "application/json")
-    public String post(@PathVariable String text,
-                      @RequestBody String[] transforms) {
-
-        // log the parameters
-        logger.debug(text);
-        logger.debug(Arrays.toString(transforms));
-
-        // perform the transformation, you should run your logic here, below is just a silly example
-        TextTransformer transformer = new TextTransformer(transforms);
-        return transformer.transform(text);
-    }
-
-
+//    @RequestMapping(method = RequestMethod.POST, produces = "application/json")
+//    public String post(@PathVariable String text,
+//                      @RequestBody String[] transforms) {
+//
+//        // log the parameters
+//        logger.debug(text);
+//        logger.debug(operations);
+//
+//        // perform the transformation, you should run your logic here, below is just a silly example
+//        TextTransformer transformer = new TextTransformer(transforms);
+//        return transformer.transform(text);
+//    }
 
 }
 
