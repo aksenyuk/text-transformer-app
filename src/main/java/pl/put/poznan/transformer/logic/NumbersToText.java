@@ -117,7 +117,7 @@ public class NumbersToText extends Decorator{
                 list_text[i] = result;
             }
             else{
-                if(isDouble(list_text[i]) && Integer.parseInt(list_text[i]) < 1000){
+                if(isDouble(list_text[i]) && Double.parseDouble(list_text[i]) < 1000){
                     String[] new_number = list_text[i].split("\\.");
                     int before_dot = Integer.parseInt(new_number[0]);
                     int after_dot = Integer.parseInt(new_number[1]);
