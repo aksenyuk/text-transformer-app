@@ -14,9 +14,10 @@ public class TextTransformerApplication {
          then select 'Raw Data' tab and receive your transformed text
          */
         public static void main(String[] args) {
+                SpringApplication.run(TextTransformerApplication.class, args);
+                System.setProperty("java.awt.headless", "false");
                 ControlPanel panel = new ControlPanel("Text Transformer");
                 panel.setVisible(true);
-                SpringApplication.run(TextTransformerApplication.class, args);
 /*
         CLI version
  */
