@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="pl.put.poznan.transformer.app.ControlPanel">
-  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridBagLayout">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
       <xy x="20" y="20" width="1272" height="846"/>
     </constraints>
@@ -10,10 +11,10 @@
     </properties>
     <border type="none"/>
     <children>
-      <grid id="141c2" layout-manager="GridBagLayout">
+      <grid id="141c2" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="1.0" weighty="1.0"/>
         </constraints>
         <properties>
           <background color="-12894399"/>
@@ -21,10 +22,10 @@
         </properties>
         <border type="none"/>
         <children>
-          <grid id="b2411" layout-manager="GridBagLayout">
+          <grid id="b2411" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="1.0" weighty="1.0"/>
             </constraints>
             <properties>
               <background color="-12894399"/>
@@ -32,10 +33,10 @@
             </properties>
             <border type="none"/>
             <children>
-              <grid id="30afe" layout-manager="GridBagLayout">
+              <grid id="30afe" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="1.0" weighty="1.0"/>
                 </constraints>
                 <properties>
                   <background color="-12894399"/>
@@ -48,7 +49,6 @@
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="50"/>
                       </grid>
-                      <gridbag weightx="1.0" weighty="1.0"/>
                     </constraints>
                     <properties>
                       <background color="-12894399"/>
@@ -62,7 +62,6 @@
                       <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="50"/>
                       </grid>
-                      <gridbag weightx="1.0" weighty="1.0"/>
                     </constraints>
                     <properties>
                       <background color="-12894399"/>
@@ -74,14 +73,12 @@
                   <component id="8d194" class="javax.swing.JToolBar$Separator">
                     <constraints>
                       <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                      <gridbag weightx="0.0" weighty="1.0"/>
                     </constraints>
                     <properties/>
                   </component>
                   <component id="c757b" class="javax.swing.JToolBar$Separator">
                     <constraints>
                       <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                      <gridbag weightx="0.0" weighty="1.0"/>
                     </constraints>
                     <properties/>
                   </component>
@@ -90,14 +87,13 @@
               <component id="e7208" class="javax.swing.JToolBar$Separator">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="0.0" weighty="0.0"/>
                 </constraints>
                 <properties/>
               </component>
-              <grid id="9bfbd" layout-manager="GridBagLayout">
+              <grid id="9bfbd" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="1.0" weighty="0.0"/>
                 </constraints>
                 <properties>
                   <background color="-12894399"/>
@@ -105,10 +101,10 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <grid id="a0810" layout-manager="GridBagLayout">
+                  <grid id="a0810" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
                     <constraints>
                       <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
-                      <gridbag weightx="1.0" weighty="1.0"/>
                     </constraints>
                     <properties>
                       <background color="-12894399"/>
@@ -116,10 +112,10 @@
                     </properties>
                     <border type="empty"/>
                     <children>
-                      <grid id="53be7" layout-manager="GridBagLayout">
+                      <grid id="53be7" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
                         <constraints>
                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                          <gridbag weightx="1.0" weighty="1.0"/>
                         </constraints>
                         <properties>
                           <foreground color="-12894399"/>
@@ -131,7 +127,6 @@
                           <component id="d8e53" class="javax.swing.JButton" binding="button7" default-binding="true">
                             <constraints>
                               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                              <gridbag weightx="1.0" weighty="1.0"/>
                             </constraints>
                             <properties>
                               <background color="-13281152"/>
@@ -143,10 +138,10 @@
                           </component>
                         </children>
                       </grid>
-                      <grid id="7142f" layout-manager="GridBagLayout">
+                      <grid id="7142f" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
                         <constraints>
                           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                          <gridbag weightx="1.0" weighty="1.0"/>
                         </constraints>
                         <properties>
                           <foreground color="-12894399"/>
@@ -158,7 +153,6 @@
                           <component id="e0007" class="javax.swing.JButton" binding="button9">
                             <constraints>
                               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                              <gridbag weightx="1.0" weighty="1.0"/>
                             </constraints>
                             <properties>
                               <background color="-13281152"/>
@@ -170,10 +164,10 @@
                           </component>
                         </children>
                       </grid>
-                      <grid id="229b8" layout-manager="GridBagLayout">
+                      <grid id="229b8" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
                         <constraints>
                           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                          <gridbag weightx="1.0" weighty="1.0"/>
                         </constraints>
                         <properties>
                           <foreground color="-12894399"/>
@@ -185,7 +179,6 @@
                           <component id="e18d0" class="javax.swing.JButton" binding="button8">
                             <constraints>
                               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                              <gridbag weightx="1.0" weighty="1.0"/>
                             </constraints>
                             <properties>
                               <background color="-13281152"/>
@@ -199,10 +192,10 @@
                       </grid>
                     </children>
                   </grid>
-                  <grid id="d9b0a" layout-manager="GridBagLayout">
+                  <grid id="d9b0a" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
                     <constraints>
                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
-                      <gridbag weightx="1.0" weighty="1.0"/>
                     </constraints>
                     <properties>
                       <background color="-12894399"/>
@@ -210,10 +203,10 @@
                     </properties>
                     <border type="empty"/>
                     <children>
-                      <grid id="aa18d" layout-manager="GridBagLayout">
+                      <grid id="aa18d" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
                         <constraints>
                           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                          <gridbag weightx="1.0" weighty="1.0"/>
                         </constraints>
                         <properties>
                           <foreground color="-12894399"/>
@@ -225,7 +218,6 @@
                           <component id="21a19" class="javax.swing.JButton" binding="button1" default-binding="true">
                             <constraints>
                               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                              <gridbag weightx="1.0" weighty="1.0"/>
                             </constraints>
                             <properties>
                               <background color="-13281152"/>
@@ -237,10 +229,10 @@
                           </component>
                         </children>
                       </grid>
-                      <grid id="7ecf1" layout-manager="GridBagLayout">
+                      <grid id="7ecf1" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
                         <constraints>
                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                          <gridbag weightx="1.0" weighty="1.0"/>
                         </constraints>
                         <properties>
                           <foreground color="-12894399"/>
@@ -252,7 +244,6 @@
                           <component id="3ec6f" class="javax.swing.JButton" binding="button3" default-binding="true">
                             <constraints>
                               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                              <gridbag weightx="1.0" weighty="1.0"/>
                             </constraints>
                             <properties>
                               <background color="-13281152"/>
@@ -266,10 +257,10 @@
                           </component>
                         </children>
                       </grid>
-                      <grid id="7c1c" layout-manager="GridBagLayout">
+                      <grid id="7c1c" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
                         <constraints>
                           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                          <gridbag weightx="1.0" weighty="1.0"/>
                         </constraints>
                         <properties>
                           <foreground color="-12894399"/>
@@ -281,7 +272,6 @@
                           <component id="b8b66" class="javax.swing.JButton" binding="button2" default-binding="true">
                             <constraints>
                               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                              <gridbag weightx="1.0" weighty="1.0"/>
                             </constraints>
                             <properties>
                               <background color="-13281152"/>
@@ -295,10 +285,10 @@
                       </grid>
                     </children>
                   </grid>
-                  <grid id="75513" layout-manager="GridBagLayout">
+                  <grid id="75513" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
                     <constraints>
                       <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
-                      <gridbag weightx="1.0" weighty="1.0"/>
                     </constraints>
                     <properties>
                       <background color="-12894399"/>
@@ -309,7 +299,6 @@
                       <grid id="46041" layout-manager="GridBagLayout">
                         <constraints>
                           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                          <gridbag weightx="1.0" weighty="1.0"/>
                         </constraints>
                         <properties>
                           <foreground color="-12894399"/>
@@ -333,10 +322,10 @@
                           </component>
                         </children>
                       </grid>
-                      <grid id="178a3" layout-manager="GridBagLayout">
+                      <grid id="178a3" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
                         <constraints>
                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                          <gridbag weightx="1.0" weighty="1.0"/>
                         </constraints>
                         <properties>
                           <foreground color="-12894399"/>
@@ -348,7 +337,6 @@
                           <component id="60fe9" class="javax.swing.JButton" binding="button4" default-binding="true">
                             <constraints>
                               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                              <gridbag weightx="1.0" weighty="1.0"/>
                             </constraints>
                             <properties>
                               <background color="-13281152"/>
@@ -360,10 +348,10 @@
                           </component>
                         </children>
                       </grid>
-                      <grid id="dd948" layout-manager="GridBagLayout">
+                      <grid id="dd948" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
                         <constraints>
                           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                          <gridbag weightx="1.0" weighty="1.0"/>
                         </constraints>
                         <properties>
                           <foreground color="-12894399"/>
@@ -375,7 +363,6 @@
                           <component id="1e98d" class="javax.swing.JButton" binding="button5" default-binding="true">
                             <constraints>
                               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                              <gridbag weightx="1.0" weighty="1.0"/>
                             </constraints>
                             <properties>
                               <background color="-13281152"/>
@@ -392,14 +379,12 @@
                   <component id="10191" class="javax.swing.JToolBar$Separator">
                     <constraints>
                       <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                      <gridbag weightx="0.0" weighty="1.0"/>
                     </constraints>
                     <properties/>
                   </component>
                   <component id="9994" class="javax.swing.JToolBar$Separator">
                     <constraints>
                       <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                      <gridbag weightx="0.0" weighty="1.0"/>
                     </constraints>
                     <properties>
                       <separatorSize width="10" height="10"/>
@@ -412,21 +397,19 @@
           <component id="2bfac" class="javax.swing.JToolBar$Separator">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="1.0" weighty="0.0"/>
             </constraints>
             <properties/>
           </component>
           <component id="4c8a" class="javax.swing.JToolBar$Separator">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="1.0" weighty="0.0"/>
             </constraints>
             <properties/>
           </component>
-          <grid id="93ae6" layout-manager="GridBagLayout">
+          <grid id="93ae6" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="1.0" weighty="0.0"/>
             </constraints>
             <properties>
               <background color="-12894399"/>
@@ -437,7 +420,6 @@
               <grid id="186fb" layout-manager="GridBagLayout">
                 <constraints>
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
-                  <gridbag weightx="1.0" weighty="1.0"/>
                 </constraints>
                 <properties>
                   <background color="-11775918"/>
@@ -508,7 +490,6 @@
               <grid id="bf210" layout-manager="GridBagLayout">
                 <constraints>
                   <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
-                  <gridbag weightx="1.0" weighty="1.0"/>
                 </constraints>
                 <properties>
                   <background color="-11775918"/>
@@ -575,14 +556,12 @@
               <component id="e25" class="javax.swing.JToolBar$Separator">
                 <constraints>
                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="0.0" weighty="1.0"/>
                 </constraints>
                 <properties/>
               </component>
               <component id="af370" class="javax.swing.JToolBar$Separator">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="0.0" weighty="1.0"/>
                 </constraints>
                 <properties/>
               </component>
@@ -591,28 +570,24 @@
           <component id="3fb6" class="javax.swing.JToolBar$Separator">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="1.0" weighty="0.0"/>
             </constraints>
             <properties/>
           </component>
           <component id="645a2" class="javax.swing.JToolBar$Separator">
             <constraints>
               <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="1.0" weighty="0.0"/>
             </constraints>
             <properties/>
           </component>
           <component id="c07b0" class="javax.swing.JToolBar$Separator">
             <constraints>
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties/>
           </component>
           <component id="ce1b1" class="javax.swing.JToolBar$Separator">
             <constraints>
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="1.0" weighty="0.0"/>
             </constraints>
             <properties/>
           </component>
@@ -621,14 +596,12 @@
       <component id="d8821" class="javax.swing.JToolBar$Separator">
         <constraints>
           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="1.0"/>
         </constraints>
         <properties/>
       </component>
       <component id="95455" class="javax.swing.JToolBar$Separator">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="1.0"/>
         </constraints>
         <properties/>
       </component>
