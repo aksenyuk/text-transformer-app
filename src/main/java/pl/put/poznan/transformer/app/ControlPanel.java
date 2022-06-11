@@ -42,11 +42,10 @@ public class ControlPanel extends JFrame {
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        this.pack();
 
         setBounds(300, 0, 1000, 800);
 
-        ImageIcon frameIcon = new ImageIcon("PP_znak.png");
+        ImageIcon frameIcon = new ImageIcon("src/PP_znak.png");
         this.setIconImage(frameIcon.getImage());
 
         textArea1.addKeyListener(new KeyAdapter() {
@@ -114,15 +113,13 @@ public class ControlPanel extends JFrame {
         buttons.add(button11);
 
         for (int i = 0; i < 9; i++) {
-//            buttons.get(i).setBorderPainted(false);
-//            buttons.get(i).setContentAreaFilled(false);
             buttons.get(i).setBackground(blue);
-//            buttons.get(i).setContentAreaFilled(false);
-//            buttons.get(i).setFocusPainted(false);
-//            buttons.get(i).setFocusable(false);
-//            buttons.get(i).setBorder(BorderFactory.createEmptyBorder(10, 14, 10, 14));
+            buttons.get(i).setPreferredSize(new Dimension(40, 40));
         }
 
+
+        textArea1.setPreferredSize(new Dimension(500, 170));
+        textArea2.setPreferredSize(new Dimension(500, 170));
 
         button1.addActionListener(e -> {
             this.text = textArea1.getText();
@@ -276,6 +273,7 @@ public class ControlPanel extends JFrame {
         textArea1.setCaretColor(Color.white);
 
         this.setContentPane(panel1);
+        this.pack();
 
     }
 
