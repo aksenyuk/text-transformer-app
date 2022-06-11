@@ -271,7 +271,7 @@ public class ControlPanel extends JFrame {
         });
 
         textArea1.setCaretColor(Color.white);
-
+        this.setResizable(false);
         this.setContentPane(panel1);
         this.pack();
 
