@@ -1,12 +1,9 @@
-# Text Transformer SE Project
+# Text Transformer
 ![Build status](https://github.com/allsuitablenamesarealreadytaken/SE-2022-Project/actions/workflows/maven.yml/badge.svg)
-## WIiT, AI, 4th Semester, 2022
-### Team members: 
- - **Oleksandr Yasinskyi, 150570 - _Product Owner Proxy_**
- - **Sofya Aksenyuk, 150284 - _Scrum Master_**
- - **Uladzimir Ivashka, 150281**
 
-## Description of the project:
+Co-authored-by:  [@alessandro1802](https://github.com/alessandro1802) & [@giminosk](https://github.com/Giminosk)
+
+## Brief description:
   - [Product Backlog table](https://docs.google.com/spreadsheets/d/1oonk28AkVlMfayjzMqnAe6wwWlUSPeqs/edit?usp=sharing&ouid=111704508616076698676&rtpof=true&sd=true)
   - [UML Diagram](https://drive.google.com/file/d/1q688zw4YsSo5d6bQ-c_FD0PeGcUZWRWZ/view)
   - **For people working with text data, our _Text Transformer_ application will allow you to transform text data (e.g. change case, eliminate duplicates, etc.).**
